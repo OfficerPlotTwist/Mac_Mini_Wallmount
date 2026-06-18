@@ -1,0 +1,13 @@
+# This repo tracks ONLY the Mac Mini wall mount. The working directory is a shared
+# catch-all, so everything is ignored by default and the wall-mount files are added explicitly.
+/*
+!.gitignore
+!README.md
+!macmini_wall_mount.scad
+!macmini_wall_mount.stl
+!Macmini.glb
+!versions/
+
+# Temp preview renders
+v_*.png
+*.echo
