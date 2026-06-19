@@ -33,10 +33,11 @@ screw_y  = 54;    // wall-screw Y: out in the open ±Y segments (no rib/wall/sta
                   // has clear vertical access to the countersunk head. (The old corner screws sat
                   // UNDER the diagonal ribs at z=back_th and couldn't be reached to drive.)
 ridge_w   = 5;    // rest-ridge protrusion + 45-deg chamfer height (Mini base sits on the top)
-ridge_lift = 4;   // raise the rest-ridges ABOVE the spacer's contact plane (z=zmb) by this much.
+ridge_lift = 6;   // raise the rest-ridges ABOVE the spacer's contact plane (z=zmb) by this much.
                   // The Mini's perimeter (where the ridges land) is RECESSED relative to the
                   // central base the 88mm spacer touches, so ridges level with the spacer never
-                  // touch. *** VERIFY on the real Mini: set = perimeter recess depth. ***
+                  // touch. = perimeter recess depth, MEASURED ON THE REAL UNIT (~6mm). The GLB
+                  // model under-reported this as 4.66mm (inaccurate); 6mm fits the real Mini.
 port_post = 7;    // (legacy) rail end-structure; the top/bottom opening is now governed by
                   // corner_sweep below, not this.
 corner_sweep = 12;// how far the top/bottom walls wrap PAST each corner onto the straight edge.
