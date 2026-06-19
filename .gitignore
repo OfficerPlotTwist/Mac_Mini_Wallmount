@@ -1,13 +1,17 @@
-# This repo tracks ONLY the Mac Mini wall mount. The working directory is a shared
-# catch-all, so everything is ignored by default and the wall-mount files are added explicitly.
+# This repo tracks ONLY the Mac Mini wall mount, kept under macmini-wall-mount/.
+# The working directory is a shared catch-all, so everything is ignored by
+# default and the wall-mount files are added explicitly.
 /*
 !.gitignore
-!README.md
-!macmini_wall_mount.scad
-!macmini_wall_mount.stl
-!Macmini.glb
-!versions/
+!macmini-wall-mount
+macmini-wall-mount/*
+!macmini-wall-mount/README.md
+!macmini-wall-mount/macmini_wall_mount.scad
+!macmini-wall-mount/macmini_wall_mount.stl
+!macmini-wall-mount/Macmini.glb
+!macmini-wall-mount/versions/
+!macmini-wall-mount/docs/
 
 # Temp preview renders
-v_*.png
+macmini-wall-mount/v_*.png
 *.echo
