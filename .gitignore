@@ -3,6 +3,7 @@
 # default and the wall-mount files are added explicitly.
 /*
 !.gitignore
+!.gitattributes
 !macmini-wall-mount
 macmini-wall-mount/*
 !macmini-wall-mount/README.md

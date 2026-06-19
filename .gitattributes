@@ -1,0 +1,10 @@
+# Treat generated meshes / binaries as binary: no line-ending normalization,
+# no 3-way TEXT merge (ASCII STL would otherwise be interleaved into a corrupt
+# mesh on merge — regenerate from the .scad to resolve conflicts instead).
+*.stl  binary
+*.glb  binary
+*.blend binary
+*.blend1 binary
+*.3mf  binary
+*.step binary
+*.png  binary
