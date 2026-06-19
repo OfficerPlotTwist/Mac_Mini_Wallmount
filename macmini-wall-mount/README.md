@@ -7,7 +7,7 @@ The Mini mounts flat against the wall with the **Apple logo facing the room**; t
 ## Design highlights
 
 - **Corner‑hugging frame** — four rounded corner pockets cup the Mini's 25 mm corners; flexible side rails with snap hooks retain it in Z (press‑in assembly).
-- **Side‑rail port cutouts** — obround holes sized per connector, widened for rubber strain‑relief boots, with inter‑port webs auto‑clamped to ≥ 3 perimeters.
+- **Side‑rail port cutouts** — obround holes sized per connector, widened for rubber strain‑relief boots, with **45° teardrop tops** (self‑supporting when printed back‑plate‑down — no droopy overhangs) and inter‑port webs auto‑clamped to ≥ 2.0 mm (~4–5 perimeters, so the crowded back‑rail webs don't snap).
 - **Ø88 mm central contact pad** with a wide bore, reaching the Mini's solid central base past the recessed cooling vents.
 - **Organic "topology‑optimized" bracing** — tapered Bézier struts fan from the pad to the side rails and corners (thick at the anchors, thin mid‑span).
 - **Discrete support shelves** — small chamfered ledges, each sitting on a strut, at the recessed‑perimeter height.
