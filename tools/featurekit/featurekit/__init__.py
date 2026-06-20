@@ -10,11 +10,15 @@ __all__ = [
     "NamingError", "validate_slug",
     "PALETTE", "feature_color", "normalize_hex",
     "render_sidecar", "write_sidecar",
+    "generate",
 ]
 
-# Geometry adapter is imported lazily to avoid importing build123d at package import.
+# Geometry adapter and generate are imported lazily to avoid importing build123d at package import.
 def __getattr__(name):  # noqa: D401
     if name in {"solid", "feature_view"}:
         from featurekit import geometry
         return getattr(geometry, name)
+    if name == "generate":
+        from featurekit import generate as _generate_mod
+        return _generate_mod.generate
     raise AttributeError(name)
