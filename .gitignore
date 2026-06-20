@@ -13,6 +13,9 @@ macmini-wall-mount/*
 !macmini-wall-mount/versions/
 !macmini-wall-mount/docs/
 
+# Project-wide design docs (methodology + specs)
+!docs
+
 # Temp preview renders
 macmini-wall-mount/v_*.png
 *.echo
