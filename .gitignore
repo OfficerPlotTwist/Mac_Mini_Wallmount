@@ -18,6 +18,9 @@ macmini-wall-mount/*
 
 # Feature-first CAD engine (local package)
 !tools
+# Exclude Python bytecode even from re-included tools/
+tools/**/__pycache__/
+tools/**/*.pyc
 
 # Temp preview renders
 macmini-wall-mount/v_*.png
