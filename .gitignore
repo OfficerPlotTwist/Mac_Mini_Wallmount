@@ -16,6 +16,9 @@ macmini-wall-mount/*
 # Project-wide design docs (methodology + specs)
 !docs
 
+# Feature-first CAD engine (local package)
+!tools
+
 # Temp preview renders
 macmini-wall-mount/v_*.png
 *.echo
