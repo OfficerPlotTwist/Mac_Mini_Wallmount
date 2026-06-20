@@ -11,3 +11,10 @@ __all__ = [
     "PALETTE", "feature_color", "normalize_hex",
     "render_sidecar", "write_sidecar",
 ]
+
+# Geometry adapter is imported lazily to avoid importing build123d at package import.
+def __getattr__(name):  # noqa: D401
+    if name in {"solid", "feature_view"}:
+        from featurekit import geometry
+        return getattr(geometry, name)
+    raise AttributeError(name)
