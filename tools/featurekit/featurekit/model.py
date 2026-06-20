@@ -1,7 +1,7 @@
 """Feature/Part model + the generation-time naming-rigor gate."""
 from __future__ import annotations
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Any, Callable
 
 from featurekit.color import feature_color, normalize_hex
@@ -58,7 +58,12 @@ class Part:
                 raise FeatureValidationError(f"duplicate feature id {f.id!r}")
             seen.add(f.id)
             if f.color is not None:
-                normalize_hex(f.color)  # raises ValueError on bad pin
+                try:
+                    normalize_hex(f.color)
+                except ValueError as exc:
+                    raise FeatureValidationError(
+                        f"feature {f.id!r} color {f.color!r} is invalid: {exc}"
+                    ) from exc
             if f.kind == "add":
                 adds += 1
         if adds == 0:

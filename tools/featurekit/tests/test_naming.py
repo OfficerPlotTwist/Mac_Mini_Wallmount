@@ -8,7 +8,7 @@ def test_validate_slug_accepts_valid(good):
     assert validate_slug(good) == good
 
 
-@pytest.mark.parametrize("bad", ["", "Base", "base plate", "-x", "x-", "x__y" "@", "Ünïcode"])
+@pytest.mark.parametrize("bad", ["", "Base", "base plate", "-x", "x-", "x__y", "@", "Ünïcode"])
 def test_validate_slug_rejects_invalid(bad):
     with pytest.raises(NamingError):
         validate_slug(bad)

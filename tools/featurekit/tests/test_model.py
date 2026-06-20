@@ -72,3 +72,12 @@ def test_manifest_calls_validate():
     p.add(_f("dup", "add"))
     with pytest.raises(FeatureValidationError):
         p.manifest()
+
+
+def test_validate_rejects_bad_color_pin():
+    p = Part("widget")
+    p.add(Feature(id="base_plate", name="Base plate", kind="add",
+                  build=lambda: object(), color="not-a-hex"))
+    with pytest.raises(FeatureValidationError) as exc:
+        p.validate()
+    assert "base_plate" in str(exc.value)
